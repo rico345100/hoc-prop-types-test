@@ -1,0 +1,62 @@
+{
+		"name": "babel-react-webpack-flow-boilerplate",
+		"version": "1.0.0",
+		"description": "Boilerplate for Babel + React + Flow + Webpack Combo",
+		"main": "index.js",
+		"scripts": {
+				"build": "webpack --mode development --progress",
+				"build-analyze": "BUILD_ANALYZE=1 webpack --mode production --progress --config webpack.prod.js --profile --json > prod-result.json",
+				"build-prod": "webpack --mode production --progress --config webpack.prod.js",
+				"dev": "webpack-dev-server --mode development --open --progress --inline",
+				"flow": "flow"
+		},
+		"repository": {
+				"type": "git",
+				"url": "https://github.com/rico345100/babel-react-webpack-flow-boilerplate"
+		},
+		"keywords": [
+				"babel",
+				"react",
+				"webpack",
+				"flow",
+				"boilerplate"
+		],
+		"author": ".modernator",
+		"license": "MIT",
+		"devDependencies": {
+				"babel-core": "^6.26.3",
+				"babel-loader": "^7.1.4",
+				"babel-plugin-transform-class-properties": "^6.24.1",
+				"babel-plugin-transform-decorators-legacy": "^1.3.4",
+				"babel-plugin-transform-flow-strip-types": "^6.22.0",
+				"babel-plugin-transform-react-jsx-source": "^6.22.0",
+				"babel-polyfill": "^6.26.0",
+				"babel-preset-env": "^1.6.1",
+				"babel-preset-flow": "^6.23.0",
+				"babel-preset-react": "^6.24.1",
+				"babel-preset-react-hmre": "^1.1.1",
+				"clean-webpack-plugin": "^0.1.19",
+				"css-loader": "^0.28.11",
+				"css-module-flow": "^1.0.0",
+				"flow-bin": "^0.69.0",
+				"html-loader": "^0.5.5",
+				"html-webpack-plugin": "^3.1.0",
+				"mini-css-extract-plugin": "^0.4.0",
+				"node-sass": "^4.8.3",
+				"react": "^16.3.0",
+				"react-dom": "^16.3.0",
+				"react-redux": "^5.0.7",
+				"redux": "^3.7.2",
+				"sass-loader": "^6.0.7",
+				"style-loader": "^0.20.3",
+				"webpack": "^4.4.1",
+				"webpack-bundle-analyzer": "^3.0.2",
+				"webpack-cli": "^3.1.1",
+				"webpack-dev-server": "^3.1.1"
+		},
+		"dependencies": {
+				"express": "^4.16.3",
+				"express-history-api-fallback": "^2.2.1",
+				"serve-favicon": "^2.5.0"
+		}
+}
