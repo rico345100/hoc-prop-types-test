@@ -26,7 +26,7 @@ function injectProp<Props: {}>(
 ): ComponentType<Props> {
     return function EnhancedComponent(props: Props) {
         return <Component title="Hello" {...props} />;
-    }
+    };
 };
 
-export default injectProp(App);
+export default injectProp<AppProps>(App);

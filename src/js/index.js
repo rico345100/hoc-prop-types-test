@@ -14,4 +14,4 @@ entryEl.className = 'entry';
 
 body.appendChild(entryEl);
 
-ReactDOM.render(<App message="A" />, entryEl);
+// ReactDOM.render(<App message="A" />, entryEl);
