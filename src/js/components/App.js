@@ -21,7 +21,7 @@ class App extends Component<AppProps, {}> {
     }
 }
 
-function injectProp<Props: {}>(
+function injectProp<Props>(
     Component: ComponentType<{ title: string } & Props>
 ): ComponentType<Props> {
     return function EnhancedComponent(props: Props) {
@@ -29,4 +29,6 @@ function injectProp<Props: {}>(
     };
 };
 
-export default injectProp<AppProps>(App);
+// export default injectProps(App);
+export default injectProps<AppProps>(App);
+// export default (injectProp<AppProps>(App): ComponentType<AppProps>);
