@@ -29,6 +29,4 @@ function injectProp<Props>(
     };
 };
 
-// export default injectProps(App);
-export default injectProps<AppProps>(App);
-// export default (injectProp<AppProps>(App): ComponentType<AppProps>);
+export default injectProp<AppProps>(App);
